@@ -1,7 +1,9 @@
+
 # CS Club Game Showcase
 
 Welcome to the CS Club Game Showcase! This project is meant to be a way for us to create cool JavaScript games and share them with everyone else in the club. Follow the instructions below to contribute your own game to the showcase.
 
+View the current project here: https://unt-csce-club.github.io/CSCE-community-game/
 ## How to Contribute
 
 1. **Fork the Repository**
