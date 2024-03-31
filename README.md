@@ -20,7 +20,8 @@ Welcome to the CS Club Game Showcase! This project is meant to be a way for us t
 3. **Add Your Level**
    In the `index.html` file located at the root of the project, locate the `<div class="menu-container">` section. Here, you'll find anchor tags (`<a>`) representing each level. Add a new anchor tag for your game (you're welcome to customize your anchor tag's information and style if you want!).
    Make sure that the `href` field points to your game's HTML file.
-   Ex: For level 1, I had `href="/level_1_snake/index.html"`
+   Ex: For level 1, I had `href="./level_1_snake/index.html"`
+   Note: make sure you add the `.` at the beginning, otherwise when the page is deployed it'll route to the wrong file
 
 4. **Commit and Push Your Changes**
    After adding your game folder and updating the level HTML, commit your changes and push them to the repository.
