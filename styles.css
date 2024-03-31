@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+h1 {
+  color: black;
+}
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.standard-box {
+  width: 220px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgb(0, 123, 60);
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.standard-box:hover {
+  background-color: black;
+}
+
+.menu-return-button {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+}

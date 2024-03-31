@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link href="./output.css" rel="stylesheet" />
+
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: white;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .level-select {
+        color: black;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        border-color: white;
+        border-width: 1px;
+        background-color: white;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .level-select:hover {
+        background-color: black;
+        color: white;
+      }
+      #game-board {
+        background-color: lightgrey;
+        width: 90vmin;
+        height: 90vmin;
+        border-radius: 10px;
+
+        display: grid;
+        grid-template-rows: repeat(21, 1fr);
+        grid-template-columns: repeat(21, 1fr);
+      }
+
+      .snake {
+        background-color: greenyellow;
+        border: 0.25vmin solid black;
+      }
+
+      .food {
+        background-color: yellow;
+        border: 0.25vmin solid black;
+      }
+    </style>
+    <script src="game.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a class="level-select" href="../index.html">Back to Level Select</a>
+      <div id="game-board"></div>
+    </div>
+  </body>
+</html>
