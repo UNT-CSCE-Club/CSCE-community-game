@@ -2,9 +2,16 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
 }
-h1 {
-  color: black;
+
+.content-container {
+  margin: 0 auto;
+  max-width: 600px;
 }
+
+a {
+    color: black;
+}
+
 .menu-container {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +24,7 @@ h1 {
   margin: 10px;
   padding: 10px 15px;
   border-radius: 10px;
-  background-color: rgb(0, 123, 60);
+  background-color: rgb(35, 35, 255);
   transition: background-color 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -25,10 +32,6 @@ h1 {
   align-items: center;
   text-decoration: none;
   color: white;
-}
-
-.example-box {
-  background-color: rgb(35, 35, 255);
 }
 
 .standard-box:hover {

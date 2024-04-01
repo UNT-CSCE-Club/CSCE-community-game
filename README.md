@@ -20,12 +20,16 @@ View the current project here: https://unt-csce-club.github.io/CSCE-community-ga
    This is where you'll code your game.
 
 3. **Add Your Level**
-   In the `index.html` file located at the root of the project, locate the `<div class="menu-container">` section. Here, you'll find anchor tags (`<a>`) representing each level. Add a new anchor tag for your game (you're welcome to customize your anchor tag's information and style if you want!).
+   In the `gameMenu.js` file located at the root of the project, locate the `menuLevels` array inside the `setMenu()` function. Here, you'll find Level objects describing other game levels. Add a new object for your game in the following format:
+   `new Level("level title", "author", "date", "href"),`
    Make sure that the `href` field points to your game's HTML file.
-   Ex: For level 1, I had `href="./level_1_snake/index.html"`
+   Ex: For Snake, I had `href="./level_1_snake/index.html"`
    Note: make sure you add the `.` at the beginning, otherwise when the page is deployed it'll route to the wrong file
 
-4. **Commit and Push Your Changes**
+4. **Example Code**
+   View some example code in the examples folder if you aren't sure how to get started. The examples outline Kaboom.js, an easy to learn game dev library that is much more streamlined for game dev than vanilla JavaScript
+
+5. **Commit and Push Your Changes**
    After adding your game folder and updating the level HTML, commit your changes and push them to the repository.
 
 ```bash
@@ -34,7 +38,7 @@ View the current project here: https://unt-csce-club.github.io/CSCE-community-ga
     git push origin main
 ```
 
-5. **Submit a Pull Request**
+6. **Submit a Pull Request**
    Finally, submit a pull request to merge your changes into the main branch. We will review your contribution and merge it if everything looks good.
 
 Congratulations! Your game is now part of the showcase.
