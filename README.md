@@ -20,16 +20,21 @@ View the current project here: https://unt-csce-club.github.io/CSCE-community-ga
    This is where you'll code your game.
 
 3. **Add Your Level**
+
    In the `gameMenu.js` file located at the root of the project, locate the `menuLevels` array inside the `setMenu()` function. Here, you'll find Level objects describing other game levels. Add a new object for your game in the following format:
-   `new Level("level title", "author", "date", "href"),`
+   ```JavaScript
+   new Level("level title", "author", "date", "href"),
+   ```
    Make sure that the `href` field points to your game's HTML file.
-   Ex: For Snake, I had `href="./level_1_snake/index.html"`
-   Note: make sure you add the `.` at the beginning, otherwise when the page is deployed it'll route to the wrong file
+   Ex: For Snake, the href is `href="./level_1_snake/index.html"`
+   Note: make sure you add the `.` at the beginning, otherwise when the page is deployed it'll route to the wrong file.
 
-4. **Example Code**
-   View some example code in the examples folder if you aren't sure how to get started. The examples outline Kaboom.js, an easy to learn game dev library that is much more streamlined for game dev than vanilla JavaScript
+5. **Example Code**
 
-5. **Commit and Push Your Changes**
+   View some example code in the examples folder if you aren't sure how to get started. The examples outline Kaboom.js, an easy to learn library that is more streamlined for game dev than vanilla JavaScript.
+
+7. **Commit and Push Your Changes**
+
    After adding your game folder and updating the level HTML, commit your changes and push them to the repository.
 
 ```bash
@@ -39,6 +44,6 @@ View the current project here: https://unt-csce-club.github.io/CSCE-community-ga
 ```
 
 6. **Submit a Pull Request**
-   Finally, submit a pull request to merge your changes into the main branch. We will review your contribution and merge it if everything looks good.
 
-Congratulations! Your game is now part of the showcase.
+   Finally, submit a pull request to merge your changes into the main branch. We will review your contribution and merge it if everything looks good.
+   Congratulations! Your game is now part of the showcase.
