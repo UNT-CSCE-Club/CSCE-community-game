@@ -22,7 +22,7 @@ function setMenu() {
     for (const level of menuLevels) {
         menu.innerHTML += `
         <a href="${level.href}" class="standard-box">
-            <div>${level.title}</div>
+            <div class="level-title">${level.title}</div>
             <div>Author: ${level.author}</div>
             <div>Date Created: ${level.date}</div>
         </a>

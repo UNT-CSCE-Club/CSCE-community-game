@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
+  background-color: rgb(200, 199, 199);
 }
 h1 {
   color: black;
@@ -39,4 +40,9 @@ h1 {
   background-color: white;
   width: 200px;
   height: 200px;
+}
+
+.level-title {
+  margin-bottom: 12px;
+  font-weight: bold;
 }

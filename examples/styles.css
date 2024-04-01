@@ -43,3 +43,8 @@ a {
   width: 200px;
   height: 200px;
 }
+
+.level-title {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
