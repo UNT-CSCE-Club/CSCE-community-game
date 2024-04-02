@@ -14,7 +14,7 @@ scene("main", () => {
     // Add custom loaded sprite
     const CSlogo = add([
         sprite("logo"),
-        pos(250, 250),
+        pos(center()), // center() gets center of game canvas
         scale(0.5),
         anchor("center"), // sprite position will now be based off center of sprite image instead of top left corner of sprite image
         {
@@ -29,29 +29,33 @@ scene("main", () => {
         if (CSlogo.pos.y > 0) {
             CSlogo.move(0, -CSlogo.speed * dt());
         } else {
-            CSlogo.moveTo(250, 250);
+            CSlogo.moveTo(center());
         }
     });
     onKeyDown("a", () => {
         if (CSlogo.pos.x > 0) {
             CSlogo.move(-CSlogo.speed * dt(), 0);
         } else {
-            CSlogo.moveTo(250, 250);
+            CSlogo.moveTo(center());
         }
     });
     onKeyDown("s", () => {
         if (CSlogo.pos.y < height()) {
             CSlogo.move(0, CSlogo.speed * dt());
         } else {
-            CSlogo.moveTo(250, 250);
+            CSlogo.moveTo(center());
         }
     });
     onKeyDown("d", () => {
         if (CSlogo.pos.x < width()) {
             CSlogo.move(CSlogo.speed * dt(), 0);
         } else {
-            CSlogo.moveTo(250, 250);
+            CSlogo.moveTo(center());
         }
+    });
+    onClick(() => {
+        console.log("Clicked");
+        CSlogo.moveTo(mousePos());
     });
 });
 

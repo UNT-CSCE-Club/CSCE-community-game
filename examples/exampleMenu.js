@@ -11,6 +11,7 @@ function setMenu() {
     const menuLevels = [
         new Level("Kaboom Template", "Reid Spreiter", "3/31/2024", "./kaboom_template/kaboom_template.html"),
         new Level("Kaboom Move", "Reid Spreiter", "4/1/2024", "./kaboom_move/kaboom_move.html"),
+        new Level("Kaboom Endless Jumper", "Reid Spreiter", "4/1/2024", "./kaboom_endless_jumper/kaboom_endless_jumper.html"),
     ];
 
     const menu = document.querySelector(".menu-container");
