@@ -1,6 +1,9 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(200, 199, 199);
 }
 h1 {
@@ -45,4 +48,16 @@ h1 {
 .level-title {
   margin-bottom: 12px;
   font-weight: bold;
+}
+
+#github-container {
+}
+
+#github_icon{
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+#github_icon:hover{
+  transform: scale(1.5); /* Scale up the icon on hover */
+
 }

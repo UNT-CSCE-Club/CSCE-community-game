@@ -14,7 +14,7 @@
         justify-content: center;
         align-items: center;
         margin: 0;
-        background-color: white;
+        background-color: slategray;
       }
       .container {
         display: flex;
@@ -23,26 +23,27 @@
         align-items: center;
       }
       .level-select {
-        color: black;
+        color: white;
         font-size: 1.5rem;
         border-radius: 10px;
         border-color: white;
         border-width: 1px;
-        background-color: white;
+        background-color: slategrey;
         padding: 5px 10px;
         margin-bottom: 5px;
         margin-top: 5px;
         transition: background-color 0.3s ease-in-out;
       }
       .level-select:hover {
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
       }
       #game-board {
-        background-color: lightgrey;
+        background-color: white;
         width: 90vmin;
         height: 90vmin;
-        border-radius: 10px;
+        border: 1vmin solid black;
+
 
         display: grid;
         grid-template-rows: repeat(21, 1fr);
@@ -50,12 +51,13 @@
       }
 
       .snake {
-        background-color: greenyellow;
+        background-color: #00BCF0;
         border: 0.25vmin solid black;
       }
 
       .food {
-        background-color: yellow;
+        background-color: #FFE556
+;
         border: 0.25vmin solid black;
       }
     </style>
