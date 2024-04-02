@@ -16,6 +16,7 @@ function setMenu() {
     //
     const menuLevels = [
         new Level("Snake", "Aaron Alexander", "3/31/2024", "./level_1_snake/index.html"),
+        new Level("Secret Square", "Reid Spreiter", "4/1/2024", "./secret_square/secret_square.html"),
     ];
 
     const menu = document.querySelector(".menu-container");
